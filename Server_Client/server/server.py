@@ -3,8 +3,7 @@ import socket
 PORT = 8081
 HOST = '127.0.0.1'  # TODO: Change this to the IP address of the computer running the server
 
-
-def main():
+def initServer():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_address = (HOST, PORT)
     server_socket.bind(server_address)
@@ -13,6 +12,12 @@ def main():
     print("Waiting for connection...")
     client_socket, client_address = server_socket.accept()
     print(f"Connection from {client_address} has been established!")
+
+    return server_socket, client_socket
+
+def main():
+    # Initialize the server
+    server_socket, client_socket = initServer()
 
     try:
         while True:

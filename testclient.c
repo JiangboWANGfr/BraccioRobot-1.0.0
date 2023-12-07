@@ -6,8 +6,8 @@
 #pragma comment(lib, "ws2_32.lib") // Link with the Winsock library
 
 #define PORT 8081
-// #define SERVER_ADDR "192.168.249.7" //todo:  server ip for the PROJECT
-#define SERVER_ADDR "127.0.0.1" // todo:  server ip for test just in windows localhost
+#define SERVER_ADDR "192.168.8.7" //todo:  server ip for the PROJECT
+// #define SERVER_ADDR "127.0.0.1" // todo:  server ip for test just in windows localhost
 
 SOCKET sock = INVALID_SOCKET;
 
