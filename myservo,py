@@ -32,12 +32,14 @@ class Servo:
 
 
 servo = Servo(12)
+servo2 = Servo(13)
 
 try:
     while True:
         # set the servo angle
         angle = float(input("输入角度 (0 到 180): "))
         servo.setAngle(angle)
+        servo2.setAngle(angle)
 
 except KeyboardInterrupt:
     pass

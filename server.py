@@ -24,6 +24,7 @@ def main():
     server_socket, client_socket = initServer()
     # Initialize the servo
     servo = Servo(12)
+    servo2 = Servo(13)
 
     try:
         while True:
